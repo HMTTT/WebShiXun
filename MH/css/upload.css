@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.editListPop {
+	background: #FFF;
+}
+.pop-tip {
+	position: absolute;
+	top: 183.5px;
+	left: 720px;
+	width: 480px;
+	z-index: 9998;
+	border-radius: 4px;
+	box-shadow: 0 5px 16px #000000;
+	border: none;
+	width: 480px;
+	left: 720px;
+	top: 183.5px;
+	font-size: 12px;
+}
+.pop-tip-top {
+	position: relative;
+	z-index: 10;
+	border-bottom: 1px solid #191919;
+	border-radius: 4px 4px 0 0;
+	background: #2d2d2d;
+	cursor: move;
+	padding-right: 45px;
+	margin: 0;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 18px;
+	border-radius: 3px 3px 0 0;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
