@@ -1,14 +1,14 @@
 <template>
   <div id="app">
+    <DongTai></DongTai>
   </div>
 </template>
 
 <script>
+import DongTai from './components/RenLin/DongTai'
 export default {
-
-  name: 'App',
-  compoments:{
-
+  components:{
+    DongTai
   }
 }
 </script>
