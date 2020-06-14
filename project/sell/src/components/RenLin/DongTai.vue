@@ -1,12 +1,11 @@
 <template>
-    <div class="dongtai">
+    <div class="DongTai">
         动态
     </div>
 </template>
 
 <script>
 export default {
-    name:'dongtai'
 }
 </script>
 
