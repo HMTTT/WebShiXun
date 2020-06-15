@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <DongTai></DongTai>
+    <live></live>
   </div>
+
 </template>
 
 <script>
 import DongTai from './components/RenLin/DongTai'
+import live from "./components/XuJinRen/live"
 export default {
   components:{
-    DongTai
+    DongTai,
+    live
   }
 }
 </script>
