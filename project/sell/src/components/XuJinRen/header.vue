@@ -18,7 +18,6 @@ export default{
   #header_
     width:100%;
     height:48px;
-    float:left;
     .header_common
       float:left;
       text-align :center;
@@ -26,6 +25,7 @@ export default{
     .header_search_xjr
       margin-top:8px;
     .img_
+      margin-left:2px;
       width:48px;
       border-radius:50%;
       height:100%;
