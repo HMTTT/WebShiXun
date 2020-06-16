@@ -26,7 +26,7 @@
           this.header_label =this.xujinrenData.header_label;
         }
       })
-    },
+    }, 
   }
 </script>
 
