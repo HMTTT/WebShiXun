@@ -20,6 +20,7 @@ const express = require('express')
 const app = express()
 //引入数据
 var xuJinRenData = require('../static/XuJinRenData.json')
+var dongTaiData = require('../src/components/RenLin/json/dongTai.json')
 
 //定义路由
 var apiRoutes = express.Router()
@@ -27,6 +28,9 @@ var apiRoutes = express.Router()
 app.use('/api',apiRoutes)
 //分别定义数据
 var header_navigation = xuJinRenData.header_navigation
+
+var dongTai = dongTaiData
+
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -41,6 +45,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           erron:0,
           data:header_navigation
+        })
+      })
+
+      app.get('/api/DT',(req,res)=>{
+        res.json({
+          erron:0,
+          data:dongTai
         })
       })
     },

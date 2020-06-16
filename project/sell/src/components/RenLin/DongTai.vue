@@ -66,13 +66,13 @@
                                 <div class="desc">
                                     动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述
                                 </div>
-                                <!-- <div v-if="i % 3 == 0" class="extra">
+                                <div class="extra">
                                     <div class="extra-img">
-                                        <img @click="click_img_show($event)" v-if="i % 6 == 0" class="img" src="./img/kkl.jpg" alt="" width="100%" >
-                                        <img @click="click_img_show($event)" v-else class="img" src="./img/psb.jpg" alt="" width="100%" >
+                                        <img @click="click_img_show($event)" v-if="i % 2 == 0" class="img" src="./img/kkl.jpg" alt="" width="100%" >
+                                        <img @click="click_img_show($event)" v-else class="img" :src="imgsrc" alt="" width="100%" >
                                     </div>
                                 </div>
-                                <div v-else-if="i % 2 == 0" class="extra">
+                                <!-- <div v-else-if="i % 2 == 0" class="extra">
                                     <video class="vedio" src="./vedio/meah264.mp4" controls width="100%" ></video>
                                     视频
                                 </div> -->
@@ -92,6 +92,23 @@
 
 <script>
 export default {
+    data(){
+		return {
+			dongTaiData:{},
+            imgsrc : require("./img/kkl.jpg")
+		}
+	},
+    created(){
+		this.$http.get('/api/DT').then((res)=>{
+                res = res.body
+                console.info(res)
+				if (res.erron == 0) {
+                    this.dongTaiData = res.data.data
+                    console.info(this.dongTaiData)
+				}
+		})
+        console.info(this.dongTaiData)
+	},
     methods:{
         // 显示全部图片和取消之
         click_img_show(e){
