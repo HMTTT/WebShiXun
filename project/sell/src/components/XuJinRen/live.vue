@@ -1,11 +1,11 @@
 <template>
   <div id="live_id">
-     <header_ class="head_common"></header_>
-     <div id="navigation_xjr" class="head_common">
-       <div id="div_" ref="navigationXjr">
-           <ul>
-             <li v-for="item, index in header_navigation" class="header_navigation_li">
-               {{item}}
+     <header_></header_>
+     <div id="navigation_xjr"  ref="navigationXjr">
+       <div id="div_" >
+           <ul class="ul_">
+             <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)">
+               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'">{{item}}</a>
              </li>
            </ul>
        </div>
@@ -21,6 +21,7 @@ export default{
   data(){
     return{
        header_navigation:[],
+       isActivateXjr_a:[]
     }
   },
   components:{
@@ -32,23 +33,33 @@ export default{
       let erron = res.erron;
       if(erron == 0){
         this.header_navigation = res.data;
+        for(let i = 0; i < this.header_navigation.length; i ++){
+          this.isActivateXjr_a[i] = false;
+        }
+        this.isActivateXjr_a[0] = true;
         this.$nextTick(()=>{
-        this._initScroll();
+          this._initScroll();
+
         })
       }
     });
   },
   methods:{
     _initScroll(){
-      // let cliw = 80 *this.header_navigation.length ;
-      // this.$refs.navigationXjr.style.width = cliw + "px";
   		this.menuScroll = new MScroll(this.$refs.navigationXjr, {
   			click:true,
         scrollX:true,
         scrollY:false,
-        // eventPassthrough:"vertical",
+        probeType:3
   		});
   	},
+    changeActivate_xjr(index){
+        for(let i = 0; i < this.header_navigation.length; i ++){
+          this.isActivateXjr_a[i] = false;
+        }
+        this.isActivateXjr_a[index] = true;
+        this.$forceUpdate();
+    }
   }
 }
 
@@ -57,22 +68,29 @@ export default{
 
 <style lang="stylus" rel="stylesheet/stylus">
   #live_id
-    width:414px;
     height:70px;
     #navigation_xjr
-      flex:1;
       height:50px;
-      width:414px;
+      display:flex;
       overflow:hidden;
       #div_
-        display:flex;
-        width:414px;
         height:100%;
-        .header_navigation_li
-          display:table;
-          width:80px;
-          height:100%;
-          text-align :center;
-          line-height :50px;
-          float:left;
+        .ul_
+          width:auto;
+          display :flex;
+          height:50px;
+          .header_navigation_li
+            width:80px;
+            height:48px;
+            line-height :48px;
+            a
+              display :inline-block;
+              height:100%;
+              font-size :18px;
+            .isActivate_xjr
+              color:rgb(255, 0, 127);
+              border-bottom :2px solid rgb(255,0,127);
+            .NoActivate_xjr
+              color:none;
+              border-bottom :none;
 </style>
