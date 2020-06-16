@@ -16,7 +16,6 @@
   </div>
 </template>
 
-
 <script>
 import header_ from './header'
 import MScroll from 'better-scroll'
