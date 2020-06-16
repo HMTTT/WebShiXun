@@ -21,6 +21,7 @@ const app = express()
 //引入数据
 var xuJinRenData = require('../static/XuJinRenData.json')
 var dongTaiData = require('../src/components/RenLin/json/dongTai.json')
+var xuJinRenData = require('../src/components/XuJinRen/XuJinRenData.json')
 
 //定义路由
 var apiRoutes = express.Router()
@@ -30,7 +31,7 @@ app.use('/api',apiRoutes)
 var header_navigation = xuJinRenData.header_navigation
 
 var dongTai = dongTaiData
-
+var header_lunbo = xuJinRenData.header_lunbo
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -45,6 +46,18 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({
           erron:0,
           data:header_navigation
+        })
+      }),
+      app.get('/api/header_lunbo',(req,res)=>{
+        res.json({
+          erron:0,
+          data:header_lunbo
+        })
+      }),
+      app.get('/api/xujinren',(req,res)=>{
+        res.json({
+          erron:0,
+          data:xuJinRenData
         })
       })
 

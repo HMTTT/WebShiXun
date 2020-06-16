@@ -16,7 +16,6 @@
   </div>
 </template>
 
-
 <script>
 import header_ from './header'
 import MScroll from 'better-scroll'
@@ -106,5 +105,5 @@ export default{
 
     .live_context_xjr
       width:100%;
-      height:100%;
+      height:130px;
 </style>
