@@ -49,6 +49,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           erron:0,
           data:header_lunbo
         })
+      }),
+      app.get('/api/xujinren',(req,res)=>{
+        res.json({
+          erron:0,
+          data:xuJinRenData
+        })
       })
     },
     clientLogLevel: 'warning',

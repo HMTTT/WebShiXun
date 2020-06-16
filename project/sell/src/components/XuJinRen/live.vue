@@ -105,5 +105,5 @@ export default{
 
     .live_context_xjr
       width:100%;
-      height:100%;
+      height:130px;
 </style>

@@ -53,6 +53,7 @@
       interval_x:function(){
         let this_ = this;
         let temp = 0;
+        this_.lunboList = this_.$refs.sliderContext.getElementsByClassName("wrapper_x");
         return setInterval(function(){
           if(this_.pageCurrentIndex == 0){
             temp = 1;
@@ -61,7 +62,6 @@
           }else{
             temp = 0;
           }
-          this_.lunboList = this_.$refs.sliderContext.getElementsByClassName("wrapper_x");
           this_.lunboScroll.scrollToElement(this_.lunboList[temp], 600);
           this_.pageCurrentIndex = temp;
         }, 3000);
@@ -117,7 +117,7 @@
     #span_x
       position :absolute;
       display:flex;
-      top: 215px;
+      top: 200px;
       right:15px;
       width:60px;
       justify-content: space-around;
