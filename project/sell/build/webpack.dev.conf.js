@@ -19,7 +19,6 @@ const express = require('express')
 //创建服务连接
 const app = express()
 //引入数据
-var xuJinRenData = require('../static/XuJinRenData.json')
 var dongTaiData = require('../src/components/RenLin/json/dongTai.json')
 var xuJinRenData = require('../src/components/XuJinRen/XuJinRenData.json')
 

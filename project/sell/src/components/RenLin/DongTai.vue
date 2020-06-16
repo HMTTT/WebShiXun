@@ -101,13 +101,10 @@ export default {
     created(){
 		this.$http.get('/api/DT').then((res)=>{
                 res = res.body
-                console.info(res)
 				if (res.erron == 0) {
                     this.dongTaiData = res.data.data
-                    console.info(this.dongTaiData)
 				}
 		})
-        console.info(this.dongTaiData)
 	},
     methods:{
         // 显示全部图片和取消之

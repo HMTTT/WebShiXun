@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <live></live>
+    <!-- <live></live> -->
     <!-- 调的时候注释下DongTai -->
-    <!-- <DongTai></DongTai> -->
+    <DongTai></DongTai>
   </div>
 
 </template>
