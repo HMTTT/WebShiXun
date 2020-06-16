@@ -13,6 +13,20 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+//mock数据
+//创建服务
+const express = require('express')
+//创建服务连接
+const app = express()
+//引入数据
+var xuJinRenData = require('../static/XuJinRenData.json')
+
+//定义路由
+var apiRoutes = express.Router()
+//使用并提供接口
+app.use('/api',apiRoutes)
+//分别定义数据
+var header_navigation = xuJinRenData.header_navigation
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -22,6 +36,14 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
+    before(app){
+      app.get('/api/xujinren_header_navigation',(req,res)=>{
+        res.json({
+          erron:0,
+          data:header_navigation
+        })
+      })
+    },
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
