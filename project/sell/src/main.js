@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
+
+import liveContext  from "./components/XuJinRen/liveContext"
+import ces from "./components/XuJinRen/ceshi"
+
 Vue.config.productionTip = false
 
 Vue.use(Resource)
@@ -13,6 +17,8 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
+  {path:'/liveContext', component:liveContext},
+  {path:'/ces', component:ces}
 ]
 
 const router = new Router({
