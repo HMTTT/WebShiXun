@@ -1,0 +1,25 @@
+{
+  "kz": {
+    "top": [["自动驾驶离我们还有多远？", "https://i0.hdslb.com/bfs/archive/16bbc399bdbb8f987fdca35f45cb817d26e4dbf5.png@620w_220h.webp"],
+    ["《决胜荒野》之视觉盛宴", "https://i0.hdslb.com/bfs/sycp/creative_img/202006/ace02e91a5cb970b72a25c1ea990b61e.jpg@620w_220h.webp"],
+    ["揭秘浏览器运行原理", "https://i0.hdslb.com/bfs/archive/6f29547c763cf73596e3ef01b82a6db08005fcb1.jpg@620w_220h.webp"],
+    ["早恋会影响高考吗？", "https://i0.hdslb.com/bfs/archive/faedcc911dedd6856c4a60b9e51803abd7a00165.jpg@620w_220h.webp"],
+    ["直击华夏灵魂的国家宝藏", "https://i0.hdslb.com/bfs/archive/44b6936041d2df96b867f5628461ddf68bbf9bf1.jpg@620w_220h.webp"]],
+    "middle": [["摆摊经济", "icon-jingji"],
+    ["分区调整", "icon-fenqu"],
+    ["北斗卫星", "icon-weixing"],
+    ["空中课堂", "icon-ketang"]],
+    "content": [
+      {"partition": "财经", "list": [
+      {"cover": "https://i0.hdslb.com/bfs/archive/88e082d7d71d7260b1081f4da6e242f283024c2e.jpg@320w_200h.webp", "play": "2.2w", "comment": "344", "len": "36:16", "title": "投资人是怎么选创始人和创业项目的？【李自然说】【奇绩创坛】"},
+      {"cover": "https://i0.hdslb.com/bfs/archive/84de614db2347e25797873e1d3ff086b66b034f6.jpg@320w_200h.webp", "play": "29.6w", "comment": "3646", "len": "11:08", "title": "【刺客】美国为什么往死里整华为？中国半导体产业如何逆风翻盘？"},
+      {"cover": "https://i0.hdslb.com/bfs/archive/8f43c6738f9b6aa597e250b3294a10117b472063.jpg@320w_200h.webp", "play": "10.6w", "comment": "571", "len": "5:03", "title": "美股怎么涨回来了？美国最伟大复兴？"},
+      {"cover": "https://i2.hdslb.com/bfs/archive/f37f3fbbcb50d04af79bd052a67a3a7b9f0920e8.jpg@320w_200h.webp", "play": "8066", "comment": "84", "len": "8:43", "title": "懂王的一生：特朗普传奇【番外】"}]},
+      {"partition": "科学科普", "list": [
+      {"cover": "https://i1.hdslb.com/bfs/archive/7d0db189c815b1a6738aa8ad70e3db84e2c4e042.jpg@320w_200h.webp", "play": "7.9w", "comment": "293", "len": "3:45", "title": "古人大袖子怎么装东西？不会掉出来吗？"},
+      {"cover": "https://i0.hdslb.com/bfs/archive/2ddec1ad962626c141ec67a749f42dd9fb465f46.jpg@320w_200h.webp", "play": "1904", "comment": "4", "len": "2:52", "title": "引起舒适：超级微型“吸尘器”，两周就能扫干净一整个海湾 | 科学美国人"},
+      {"cover": "https://i2.hdslb.com/bfs/archive/a2a6263750138396d43d79b6aae0ec2f63f1614d.jpg@320w_200h.webp", "play": "8.3w", "comment": "1148", "len": "9:07", "title": "【科技袁周虑】哈工大被美国禁用Matlab，危机可能刚开始"},
+      {"cover": "https://i0.hdslb.com/bfs/archive/dfd55fabf19dd00c135ded41a738c96a597eee94.jpg@320w_200h.webp", "play": "3090", "comment": "7", "len": "4:06", "title": "如果一个类星体进入了太阳系？【大胆科学What If】"}]}
+    ]
+  }
+}
