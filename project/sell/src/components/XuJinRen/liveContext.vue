@@ -1,14 +1,22 @@
 <template>
   <div id="liveContext">
-直播主体
+    <lunbo></lunbo>
+    <header_label></header_label>
   </div>
 </template>
 
 <script>
+  import lunbo from './lunbo'
+  import header_label from "./header_label"
+  export default{
+    components:{
+      lunbo,
+      header_label,
+    },
+
+
+  }
 </script>
 
-<style>
-  #liveContext
-    width:100px;
-    height:100px;
+<style lang="stylus" rel="sheet/stylus">
 </style>
