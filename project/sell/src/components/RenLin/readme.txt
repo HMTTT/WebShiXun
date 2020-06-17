@@ -1,3 +1,0 @@
-my
-vscode test
-addTest
