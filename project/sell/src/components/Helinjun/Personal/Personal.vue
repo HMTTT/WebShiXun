@@ -10,7 +10,7 @@
 
   <div class="content-header">
     <div class="photo">
-      <span><img width="100" height="100" src="../images/v2.png" /></span>
+      <span><img width="110" height="110" src="../images/v2.png" /></span>
       </div>
         <div class="xiangxi" >
         	<div class="title">
@@ -100,16 +100,16 @@
         height :90%
     .content-header
       position: relative
-      height :120px
+      height :130px
       .photo
         float :left
-        width :110px
-        height :110px
+        width :120px
+        height :120px
         display: inline-block
       .xiangxi
         float :left
         width :200px
-        height :110px
+        height :120px
         display: inline-block
         .title
           font-size: 24px
@@ -117,10 +117,10 @@
           font-weight: bold
         .vip
           font-size: 18px
-          color: gray
-          line-height :35px
+          color: gainsboro
           .zone
             float :right
+            line-height :35px
         .money
           font-size: 16px
           color: gainsboro

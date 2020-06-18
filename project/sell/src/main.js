@@ -23,14 +23,10 @@ Vue.config.productionTip = false
 const routes = [
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
-<<<<<<< HEAD
   {path:'/Personal', component:Personal},
-  
-=======
+
   //知识区
   {path:'/kz', component:kz}
-
->>>>>>> cefc5787c1ef5877aa76be94ec2ae8bc7afbbb7d
 ]
 
 const router = new Router({
