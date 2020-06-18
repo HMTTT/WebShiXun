@@ -4,7 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
+
+import liveContext  from "./components/XuJinRen/liveContext"
+import ces from "./components/XuJinRen/ceshi"
+
+//知识区
+import kz from "./components/tantengkai/kz/kz.vue"
+
 Vue.config.productionTip = false
+import Personal from "./components/Helinjun/Personal/Personal"
 
 Vue.use(Resource)
 Vue.use(Router)
@@ -13,6 +21,11 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
+  {path:'/liveContext', component:liveContext},
+  {path:'/ces', component:ces},
+  {path:'/Personal', component:Personal},
+  //知识区
+  {path:'/kz', component:kz}
 ]
 
 const router = new Router({
