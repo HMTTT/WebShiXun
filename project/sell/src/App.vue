@@ -3,7 +3,6 @@
     <!--调试的时候注释这个 -->
     <live></live>
     <!-- 调的时候注释下DongTai -->
-<<<<<<< HEAD
     <!--<DongTai></DongTai>-->
     <Personal></Personal>
     <!-- <div class="details"></div>
@@ -24,31 +23,23 @@
             <router-link to="/Personal"><img src="./common/images/bot5.png" /></router-link>
     </div>
     </div> -->
-=======
     <!-- <DongTai></DongTai> -->
     <!-- <kz></kz> -->
->>>>>>> cefc5787c1ef5877aa76be94ec2ae8bc7afbbb7d
   </div>
 </template>
 
 <script>
 import DongTai from './components/RenLin/DongTai'
 import live from "./components/XuJinRen/live"
-<<<<<<< HEAD
 import Personal from "./components/Helinjun/Personal/Personal"
-=======
 //知识区
 import kz from "./components/tantengkai/kz/kz.vue"
->>>>>>> cefc5787c1ef5877aa76be94ec2ae8bc7afbbb7d
 export default {
   components:{
     DongTai,
     live,
-<<<<<<< HEAD
-    Personal
-=======
+    Personal,
     kz
->>>>>>> cefc5787c1ef5877aa76be94ec2ae8bc7afbbb7d
   }
 }
 </script>
