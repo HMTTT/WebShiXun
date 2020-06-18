@@ -1,11 +1,11 @@
 <template>
   <div id="live_id" @drag="live_drag">
-     <header_></header_>
+    <div><header_></header_></div>
      <div id="navigation_xjr"  ref="navigationXjr">
        <div id="div_" >
            <ul class="ul_">
-             <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)">
-               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to="routes_xjr[index]" @click="routeClick(index)" :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link></a>
+             <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)"><!--<router-link v-bind:to='routes_xjr[index]' @click='routeClick(index)' :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link>-->
+               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to='routes_xjr[index]' @click='routeClick(index)' :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link></a>
              </li>
            </ul>
        </div>

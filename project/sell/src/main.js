@@ -21,9 +21,14 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
-  {path:"/live", component:live},
-  {path:'/liveContext', component:liveContext},
-  {path:'/ces', component:ces},
+  {
+    path:"/live",
+    component:live,
+    children:[
+      {path:'/liveContext', component:liveContext},
+      {path:'/ces', component:ces},
+    ]
+  },
   {path:'/Personal', component:Personal},
   //知识区
   {path:'/kz', component:kz},
