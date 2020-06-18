@@ -8,6 +8,7 @@ import Resource from 'vue-resource'
 import liveContext  from "./components/XuJinRen/liveContext"
 import ces from "./components/XuJinRen/ceshi"
 Vue.config.productionTip = false
+import Personal from "./components/Helinjun/Personal/Personal"
 
 Vue.use(Resource)
 Vue.use(Router)
@@ -18,7 +19,8 @@ Vue.config.productionTip = false
 const routes = [
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
-
+  {path:'/Personal', component:Personal},
+  
 ]
 
 const router = new Router({
