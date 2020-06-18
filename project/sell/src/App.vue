@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <!-- <DongTai></DongTai> -->
-    <live></live>
+    <!-- <live></live> -->
+	<merberBuy></merberBuy>
   </div>
 
 </template>
@@ -9,10 +10,12 @@
 <script>
 import DongTai from './components/RenLin/DongTai'
 import live from "./components/XuJinRen/live"
+import merberBuy from "./components/lijiale/merberBuy"
 export default {
   components:{
     DongTai,
-    live
+    live,
+	merberBuy
   }
 }
 </script>

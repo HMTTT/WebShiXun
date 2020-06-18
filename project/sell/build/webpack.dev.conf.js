@@ -20,7 +20,8 @@ const express = require('express')
 const app = express()
 //引入数据
 var xuJinRenData = require('../static/XuJinRenData.json')
-
+var lijialeData = require('../src/components/lijiale/json/data_memberBuy.json')
+var lijialeData_2 = require('../src/components/lijiale/json/data_myData.json')
 //定义路由
 var apiRoutes = express.Router()
 //使用并提供接口
@@ -42,7 +43,19 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           erron:0,
           data:header_navigation
         })
-      })
+      }),
+	  app.get('/api/merberBuy',(req,res)=>{
+	    res.json({
+	      erron:0,
+	      data:lijialeData
+	    })
+	  }),
+	  app.get('/api/LJLdata',(req,res)=>{
+	    res.json({
+	      erron:0,
+	      data:lijialeData_2
+	    })
+	  })
     },
     clientLogLevel: 'warning',
     historyApiFallback: {
