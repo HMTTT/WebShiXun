@@ -1,0 +1,19 @@
+{
+	"headPicture":[
+		{"url":"手办.png","name":"手办"},
+		{"url":"周边.png","name":"周边"},
+		{"url":"漫展演出.png","name":"漫展演出"},
+		{"url":"图书漫画.png","name":"图书漫画"},
+		{"url":"bilibili.png","name":"bilibili"},
+		{"url":"游戏相关.png","name":"游戏相关"},
+		{"url":"潮玩扭蛋.png","name":"潮玩扭蛋"},
+		{"url":"全部分类.png","name":"全部分类"}
+	],
+	"bodyer_upPicture":[
+		{"url":"魔力赏.png"},
+		{"url":"今日上新.png"},
+		{"url":"IP乐园.png"},
+		{"url":"排行榜.png"},
+		{"url":"圈子.png"}
+	]
+}

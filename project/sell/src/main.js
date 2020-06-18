@@ -4,14 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import Router from 'vue-router'
 import Resource from 'vue-resource'
-
+import DongTai from "./components/RenLin/DongTai"
 import liveContext  from "./components/XuJinRen/liveContext"
 import ces from "./components/XuJinRen/ceshi"
-
+import live from "./components/XuJinRen/live"
 //知识区
 import kz from "./components/tantengkai/kz/kz.vue"
-
+import huiyuangou  from "./components/lijiale/merberBuy"
 Vue.config.productionTip = false
+import Personal from "./components/Helinjun/Personal/Personal"
 
 Vue.use(Resource)
 Vue.use(Router)
@@ -20,11 +21,14 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
+  {path:"/live", component:live},
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
+  {path:'/Personal', component:Personal},
   //知识区
-  {path:'/kz', component:kz}
-
+  {path:'/kz', component:kz},
+  {path:"/DongTai", component:DongTai},
+  {path:"/huiyuangou", component:huiyuangou}
 ]
 
 const router = new Router({

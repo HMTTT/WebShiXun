@@ -25,6 +25,9 @@ var xuJinRenData = require('../src/components/XuJinRen/XuJinRenData.json')
 var kzData = require('../src/components/tantengkai/kz/data.json')
 var kz = kzData.kz
 
+var lijialeData = require('../src/components/lijiale/json/data_memberBuy.json')
+var lijialeData_2 = require('../src/components/lijiale/json/data_myData.json')
+
 //定义路由
 var apiRoutes = express.Router()
 //使用并提供接口
@@ -64,7 +67,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             erron: 0,
             data: xuJinRenData
           })
-        })
+        }),
 
       app.get('/api/DT', (req, res) => {
           res.json({
@@ -79,7 +82,19 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             errno: 0,
             data: kz
           })
-        })
+        }),
+        app.get('/api/merberBuy',(req,res)=>{
+        	    res.json({
+        	      erron:0,
+        	      data:lijialeData
+        	    })
+        	  }),
+        	  app.get('/api/LJLdata',(req,res)=>{
+        	    res.json({
+        	      erron:0,
+        	      data:lijialeData_2
+        	    })
+        	  })
     },
     clientLogLevel: 'warning',
     historyApiFallback: {
