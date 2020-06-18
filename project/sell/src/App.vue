@@ -6,6 +6,7 @@
 	<!-- <merberBuy></merberBuy> -->
     <!--调试的时候注释这个 -->
     <!-- <live></live> -->
+    <!-- <hot></hot> -->
     <!-- 调的时候注释下DongTai -->
     <!--<DongTai></DongTai>-->
     <!-- <Personal></Personal> -->
@@ -37,6 +38,7 @@
 <script>
 import DongTai from './components/RenLin/DongTai'
 import live from "./components/XuJinRen/live"
+import hot from './components/joe/hot.vue'
 import merberBuy from "./components/lijiale/merberBuy"
 import Personal from "./components/Helinjun/Personal/Personal"
 //知识区
@@ -45,7 +47,7 @@ export default {
   components:{
     DongTai,
     live,
-	merberBuy,
+    merberBuy,
     Personal,
     kz
   },
@@ -91,6 +93,5 @@ export default {
 <<<<<<< HEAD
   height:auto;
 }
-=======
 } */
 </style>

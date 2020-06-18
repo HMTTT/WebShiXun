@@ -7,6 +7,7 @@ import Resource from 'vue-resource'
 import DongTai from "./components/RenLin/DongTai"
 import liveContext  from "./components/XuJinRen/liveContext"
 import ces from "./components/XuJinRen/ceshi"
+import hot from "./components/joe/hot"
 import live from "./components/XuJinRen/live"
 //知识区
 import kz from "./components/tantengkai/kz/kz.vue"
@@ -32,6 +33,8 @@ const routes = [
   {path:'/Personal', component:Personal},
   //知识区
   {path:'/kz', component:kz},
+  {path: '/hot', component:hot},
+
   {path:"/DongTai", component:DongTai},
   {path:"/huiyuangou", component:huiyuangou}
 ]
