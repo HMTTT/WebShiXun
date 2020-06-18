@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <!--调试的时候注释这个 -->
-    <live></live>
+    <!-- <live></live> -->
+    <hot></hot>
     <!-- 调的时候注释下DongTai -->
     <!-- <DongTai></DongTai> -->
     <!-- <kz></kz> -->
@@ -11,13 +12,15 @@
 <script>
 import DongTai from './components/RenLin/DongTai'
 import live from "./components/XuJinRen/live"
+import hot from './components/joe/hot.vue'
 //知识区
 import kz from "./components/tantengkai/kz/kz.vue"
 export default {
   components:{
     DongTai,
     live,
-    kz
+    kz,
+    hot
   }
 }
 </script>

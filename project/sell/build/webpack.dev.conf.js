@@ -21,6 +21,7 @@ const app = express()
 //引入数据
 var dongTaiData = require('../src/components/RenLin/json/dongTai.json')
 var xuJinRenData = require('../src/components/XuJinRen/XuJinRenData.json')
+var hotData = require('../src/components/joe/data.json')
 //知识区数据
 var kzData = require('../src/components/tantengkai/kz/data.json')
 var kz = kzData.kz
@@ -47,6 +48,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     before(app) {
+      app.get('/api/joe', (req, res) => {
+          res.json({
+            erron: 0,
+            data: hotData
+          })
+        }),
+
       app.get('/api/xujinren_header_navigation', (req, res) => {
           res.json({
             erron: 0,
@@ -64,7 +72,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
             erron: 0,
             data: xuJinRenData
           })
-        })
+        }),
 
       app.get('/api/DT', (req, res) => {
           res.json({
