@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <!-- <live></live> -->
+    <!--调试的时候注释这个 -->
+    <live></live>
     <!-- 调的时候注释下DongTai -->
-    <DongTai></DongTai>
-    <kz></kz>
+    <!-- <DongTai></DongTai> -->
+    <!-- <kz></kz> -->
   </div>
-
 </template>
 
 <script>

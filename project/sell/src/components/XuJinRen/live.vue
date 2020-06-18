@@ -5,7 +5,7 @@
        <div id="div_" >
            <ul class="ul_">
              <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)">
-               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to="routes_xjr[index]">{{item}}</router-link></a>
+               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to="routes_xjr[index]" @click="routeClick(index)" :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link></a>
              </li>
            </ul>
        </div>
@@ -43,10 +43,10 @@ export default{
         this.isActivateXjr_a[0] = true;
         this.routes_xjr[0] = "/liveContext";
         this.routes_xjr[1] = "/ces";
-        console.info(this.routes_xjr);
         this.$nextTick(()=>{
           this._initScroll();
-
+          this.routeClick();
+          document.getElementById("index_x_").click();
         })
       }
     });
@@ -60,13 +60,15 @@ export default{
         probeType:3
   		});
   	},
+    routeClick(){
+      this.routes_xjr[0] = "/liveContext";
+    },
     changeActivate_xjr(index){
         for(let i = 0; i < this.header_navigation.length; i ++){
           this.isActivateXjr_a[i] = false;
         }
         this.isActivateXjr_a[index] = true;
         //this.routes_xjr[0] = "/liveContext";
-        console.info(this.routes_xjr[index]);
         this.$forceUpdate();
     }
   }
@@ -78,6 +80,7 @@ export default{
 <style lang="stylus" rel="stylesheet/stylus">
   #live_id
     height:100%;
+    margin-bottom:80px;
     #navigation_xjr
       height:50px;
       display:flex;
