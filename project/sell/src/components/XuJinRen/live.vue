@@ -1,5 +1,5 @@
 <template>
-  <div id="live_id">
+  <div id="live_id" @drag="live_drag">
      <header_></header_>
      <div id="navigation_xjr"  ref="navigationXjr">
        <div id="div_" >
@@ -70,16 +70,16 @@ export default{
         this.isActivateXjr_a[index] = true;
         //this.routes_xjr[0] = "/liveContext";
         this.$forceUpdate();
+    },
+    live_drag(e){
+        console.info(e.pageY);
     }
   }
 }
-
-
 </script>
-
 <style lang="stylus" rel="stylesheet/stylus">
   #live_id
-    height:100%;
+    height:auto;
     margin-bottom:80px;
     #navigation_xjr
       height:50px;
