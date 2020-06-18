@@ -21,7 +21,7 @@ export default{
     .header_common
       float:left;
       text-align :center;
-      margin-right:28px;
+      margin-right:20px;
     .header_search_xjr
       margin-top:8px;
     .img_

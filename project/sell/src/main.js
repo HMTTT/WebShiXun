@@ -7,6 +7,10 @@ import Resource from 'vue-resource'
 
 import liveContext  from "./components/XuJinRen/liveContext"
 import ces from "./components/XuJinRen/ceshi"
+
+//知识区
+import kz from "./components/tantengkai/kz/kz.vue"
+
 Vue.config.productionTip = false
 import Personal from "./components/Helinjun/Personal/Personal"
 
@@ -19,8 +23,14 @@ Vue.config.productionTip = false
 const routes = [
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
+<<<<<<< HEAD
   {path:'/Personal', component:Personal},
   
+=======
+  //知识区
+  {path:'/kz', component:kz}
+
+>>>>>>> cefc5787c1ef5877aa76be94ec2ae8bc7afbbb7d
 ]
 
 const router = new Router({
