@@ -61,7 +61,7 @@
 		position absolute
 		top 7.75rem
 		bottom 2.3rem
-		overflow hidden //防止溢出,溢出部分隐藏
+		// overflow hidden //防止溢出,溢出部分隐藏
 
 		.hot-item
 			width 100%

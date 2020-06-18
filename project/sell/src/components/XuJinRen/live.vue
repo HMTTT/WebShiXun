@@ -43,6 +43,7 @@ export default{
         this.isActivateXjr_a[0] = true;
         this.routes_xjr[0] = "/liveContext";
         this.routes_xjr[1] = "/ces";
+         this.routes_xjr[2] = "/hot";
         this.$nextTick(()=>{
           this._initScroll();
           this.routeClick();

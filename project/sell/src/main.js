@@ -28,12 +28,13 @@ const routes = [
     children:[
       {path:'/liveContext', component:liveContext},
       {path:'/ces', component:ces},
+      {path: '/hot', component:hot},
     ]
   },
   {path:'/Personal', component:Personal},
   //知识区
   {path:'/kz', component:kz},
-  {path: '/hot', component:hot},
+
 
   {path:"/DongTai", component:DongTai},
   {path:"/huiyuangou", component:huiyuangou}
