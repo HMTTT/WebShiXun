@@ -18,6 +18,9 @@
         </ul>
       </div>
     </div>
+    <div class="bottom_div_">
+      <span class="bottom_div_p_">全部直播</span>
+    </div>
   </div>
 </template>
 <script>
@@ -73,6 +76,10 @@
                 margin-top:-25px;
                 display flex;
                 justify-content :space-between;
+                .li_div_img_p_span_1
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
               .li_div_desc
                 height:16px;
                 width:100%;
@@ -85,5 +92,24 @@
               .li_div_type
                 color:#ccc;
                 font-size:15px;
+    .bottom_div_
+      width:100%;
+      height:40px;
+      background-color:#e2e2e2;
+      margin-top:-20px;
+      display :block;
+      position :relative;
+      padding-top:20px;
+      padding-bottom:10px;
+      .bottom_div_p_
+        height:20px;
+        color:#999999;
+        text-align :center;
+        line-height :20px;
+        border-radius 10px;
+        border:1px solid #999999;
+        width:100px;
+        margin-left:141px;
+        display :block;
 
 </style>
