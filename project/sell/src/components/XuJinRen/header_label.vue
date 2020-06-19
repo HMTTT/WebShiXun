@@ -28,13 +28,12 @@
             img =require("./images/header_label/" + temp[i].image);
             temp[i].image = img;
             this.header_label.push(temp[i]);
-          }
+          } 
         }
       })
     },
   }
 </script>
-
 <style lang="stylus" rel="sheet/stylus">
   #header_label
     width:100%;
@@ -45,6 +44,7 @@
       flex-wrap:wrap ;
       justify-content:space-between;
       .header_label_li
+        text-align:center;
         width:18%;
         height:65px;
         margin-top:20px;
