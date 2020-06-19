@@ -13,10 +13,6 @@
      <div class="live_context_xjr">
        <router-view></router-view>
      </div>
-     <div id="woyaozhibo">
-        <p>我要</p>
-        <p>直播</p>
-     </div>
   </div>
 </template>
 
@@ -116,24 +112,5 @@ export default{
     .live_context_xjr
       width:100%;
       height:130px;
-    #woyaozhibo
-      width:70px;
-      height:70px;
-      border-radius :50%;
-      background-color :rgb(253, 46, 84);
-      position :fixed;
-      bottom :65px;
-      right:10px;
-      color:white;
-      text-align :center;
-      line-height :70px;
-      font-size:20px;
-      p 
-        width:40px;
-        margin-left:15px;
-        display :flex;
-        height:20px;
-        flex-wrap :wrap;
-        line-height:50px;
-        font-family:"楷体";
+    
 </style>
