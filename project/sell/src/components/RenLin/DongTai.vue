@@ -259,16 +259,18 @@ export default {
     .DongTai
         white-space: pre-line;
         width : 100%
-        height : 100%
+        overflow : hidden
         position : relative
+        padding-bottom : 55px
         // 外部背景色
         background : #F3F5F7
         .DT-header
+            text-align : center
             width : 100%
             position : fixed
             top : 0
             left : 0
-            background-color : gray
+            background-color : white
             height : 50px
             z-index : 100
             .content
@@ -277,6 +279,7 @@ export default {
                 line-height : 50px
                 white-space: normal
         .DT-content
+            margin-top : 50px
             // 内部背景变为v白色
             >*
                 >*
@@ -286,6 +289,7 @@ export default {
                     width : 100%
                     padding  : 10px 0
                     .search
+                        margin : 0 auto
                         border-radius : 15px
                         background : #F3F5F7
                         width : 95%
@@ -296,6 +300,7 @@ export default {
                             border : none
                             background-color : transparent
                             padding-left : 20px
+                            line-height : 30px
                             outline : medium
                 .ZH-broadcast
                     margin-top : 1px
@@ -316,6 +321,8 @@ export default {
                                 text-overflow : ellipsis
                                 height : 14px
                                 font-size : 14px
+                                text-align : center
+                                margin-top : 10px
                 .ZH-topic
                     margin-top : 10px
                     padding-top : 10px
