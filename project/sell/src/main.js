@@ -29,11 +29,12 @@ const routes = [
       {path:'/liveContext', component:liveContext},
       {path:'/ces', component:ces},
       {path: '/hot', component:hot},
+      {path:'/kz', component:kz},
     ]
   },
   {path:'/Personal', component:Personal},
   //知识区
-  {path:'/kz', component:kz},
+
 
 
   {path:"/DongTai", component:DongTai},
