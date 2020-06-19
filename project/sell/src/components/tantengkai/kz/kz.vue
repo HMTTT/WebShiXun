@@ -106,6 +106,7 @@ export default {
   font-family Comic Sans MS, Lucida Console, Microsoft YaHei, arial
   position relative
   text-align left
+  overflow-x hidden
   .top
     position relative
     .turn-img
