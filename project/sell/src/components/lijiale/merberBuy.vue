@@ -136,7 +136,7 @@
 
 					// console.log('http:'+this.feeds.list[0].imageUrls[0])
 					// console.log(this.feeds)
-					console.log(this.merberBuy)
+					//console.log(this.merberBuy)
 					// console.log(this.searchUrl_title)
 					// console.log(this.banners)
 					// console.log(this.feedtabs)
