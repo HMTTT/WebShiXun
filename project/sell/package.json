@@ -14,8 +14,7 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-resource": "^1.5.1",
-    "better-scroll": "^0.1.7",
-    "swiper": "^5.4.5"
+    "better-scroll": "^0.1.7"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
