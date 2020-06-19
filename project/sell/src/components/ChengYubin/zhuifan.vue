@@ -20,7 +20,7 @@
         </div>
         <ul class="list111">
           <li class="zflist">
-           <img src="img/icon1.png" alt="">
+           <img src="./img/icon1.png" alt="">
             番剧
           </li>
           <li class="zflist">
@@ -35,10 +35,10 @@
             <img src="./img/icon4.png" alt="">
             索引表
           </li>
-          <li class="zflist">
-            <img src="img/icon5.png" alt="">
+          <!-- <li class="zflist">
+            <img src="./img/icon5.png" alt="">
             免费看
-          </li>
+          </li> -->
         </ul>
         <div class="channel-page">
           <div class="fl-box">
@@ -1292,7 +1292,7 @@ input {
 }
 
 .sub-channel-menu {
-    height: 11.73333vw
+    /* height: 11.73333vw */
 }
 
 .sub-channel-box {
