@@ -33,23 +33,26 @@
 		created() {},
 		methods: {
 			test1() {
-				console.log(111)
 				var div1 = document.getElementById('aaaaa');
 				var div2 = document.getElementById('aaaa');
 				div1.style.display = "none";
 				div2.style.display = "block";
 			},
 			test2() {
-				console.log(111)
 				var div1 = document.getElementById('aaaaa');
+        var div2 = document.getElementById('aaaa');
 				div1.style.display = "block";
+        div2.style.display = "none";
 			}
 		}
 	}
 </script>
 
 <style>
-	.aaaa{
+	.app1{
+    margin-bottom: 55px;
+  }
+	#aaaa{
 		display: none;
 	}
 	.tab1 {
@@ -60,12 +63,12 @@
 		flex: 1;
 		text-align: center;
 	}
-	
+
 	.tab1 div {
 		flex: 1;
 		text-align: center;
 	}
-	
+
 	.con {
 		widows: 100%;
 	}

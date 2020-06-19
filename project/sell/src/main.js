@@ -14,7 +14,6 @@ import hot from "./components/joe/hot"
 import huiyuangou  from "./components/lijiale/merberBuy"
 Vue.config.productionTip = false
 import Personal from "./components/Helinjun/Personal/Personal"
-import zhuifan from "./components/ChengYubin/zhuifan"
 import Channel from './components/yinwenbin/Channel/Channel'
 import Partition from './components/yinwenbin/Partition/Partition'
 import main from './components/yinwenbin/main/main'
@@ -32,8 +31,8 @@ const routes = [
       {path:'/liveContext', component:liveContext},
       {path:'/ces', component:ces},
       {path: '/hot', component:hot},
-      {path:'/kz', component:kz},
-      {path:"/zhuifan", component:zhuifan}
+      {path:'/kz', component:kz}
+
     ]
   },
   {path:'/liveContext', component:liveContext},

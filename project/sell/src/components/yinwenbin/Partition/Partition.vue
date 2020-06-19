@@ -122,7 +122,6 @@
 					//					console.log(data.logo)
 					//					console.log(data.name)
 				}
-				console.log(that.Data)
 			})
 		},
 	}
