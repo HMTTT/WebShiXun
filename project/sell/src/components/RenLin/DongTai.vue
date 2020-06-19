@@ -260,7 +260,6 @@ export default {
         white-space: pre-line;
         width : 100%
         height : 100%
-        overflow : hidden
         position : relative
         // 外部背景色
         background : #F3F5F7

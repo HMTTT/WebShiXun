@@ -80,6 +80,7 @@
     <img src="../images/m3.png">
     <img src="../images/m4.png">
   </div>
+  <div class="bottom12"></div>
 
 </div>
 </template>
@@ -132,7 +133,6 @@
       line-height :35px
       text-align :center
 
-
     .p-basics
       width :100%
       height :80px
@@ -180,7 +180,7 @@
 
     .p-more
       width :100%
-      height :220px
+      height :215px
       .gengduo
         position :relative
         font-size: 16px
@@ -191,8 +191,11 @@
           line-height :35px
       img
         width :100%
-        height :20%
+        height :45px
         display :inline-block
         vertical-align:top
+    .bottom12
+      width :100%
+      height :55px
 
 </style>

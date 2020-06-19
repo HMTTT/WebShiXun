@@ -1,11 +1,11 @@
 <template>
-  <div id="live_id">
-     <header_></header_>
+  <div id="live_id" @drag="live_drag">
+    <div><header_></header_></div>
      <div id="navigation_xjr"  ref="navigationXjr">
        <div id="div_" >
            <ul class="ul_">
-             <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)">
-               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to="routes_xjr[index]" @click="routeClick(index)" :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link></a>
+             <li v-for="item, index in header_navigation" class="header_navigation_li" v-on:click="changeActivate_xjr(index)"><!--<router-link v-bind:to='routes_xjr[index]' @click='routeClick(index)' :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link>-->
+               <a :class="isActivateXjr_a[index] ? 'isActivate_xjr' : 'NoActivate_xjr'"><router-link v-bind:to='routes_xjr[index]' @click='routeClick(index)' :id="index == 0 ? 'index_x_' : ''">{{item}}</router-link></a>
              </li>
            </ul>
        </div>
@@ -43,6 +43,7 @@ export default{
         this.isActivateXjr_a[0] = true;
         this.routes_xjr[0] = "/liveContext";
         this.routes_xjr[1] = "/ces";
+         this.routes_xjr[2] = "/hot";
         this.$nextTick(()=>{
           this._initScroll();
           this.routeClick();
@@ -70,16 +71,16 @@ export default{
         this.isActivateXjr_a[index] = true;
         //this.routes_xjr[0] = "/liveContext";
         this.$forceUpdate();
+    },
+    live_drag(e){
+        console.info(e.pageY);
     }
   }
 }
-
-
 </script>
-
 <style lang="stylus" rel="stylesheet/stylus">
   #live_id
-    height:100%;
+    height:auto;
     margin-bottom:80px;
     #navigation_xjr
       height:50px;
