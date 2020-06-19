@@ -1,13 +1,146 @@
 <template>
   <div class="zhuifsn">
     <div class="m-head">
+      <div class="suspension" style="display:;">
+        <div class="suspension-box">
+          <div class="m-navbar">
+            <a href="/" class="logo router-link-active">
+              <i class="iconfont Navbar_logo"></i>
+            </a>
+            <div class="right">
+              <a href="/search" class="search">
+                <i class="iconfont ic_search_tab"></i>
+                <span>这就是真正的纸片人？</span>
+              </a>
+              <a href="/space?from=headline" class="face">
+                <img src="//static.hdslb.com/images/member/noface.gif" class="bfs-img" />
+              </a>
+            </div>
+          </div>
+          <div class="channel-menu">
+            <div class="v-switcher">
+              <div class="v-affix">
+                <div style="display:none;"></div>
+                <div class>
+                  <div class="v-switcher__header">
+                    <div class="v-switcher__header__before"></div>
+                    <div class="v-switcher__header__after">
+                      <i class="iconfont general_pulldown_s"></i>
+                    </div>
+                    <div class="v-switcher__header__tabs__wrap">
+                      <ul
+                        class="v-switcher__header__tabs__list v-switcher__header--start"
+                        style="transition-duration: 300ms; transform: translateX(0px);"
+                      >
+                        <a href="/" class="v-switcher__header__tabs__item router-link-active">
+                          <!---->
+                          <span>首页</span>
+                        </a>
+                        <a href="/channel/1" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>动画</span>
+                        </a>
+                        <a
+                          href="/channel/13"
+                          class="v-switcher__header__tabs__item router-link-exact-active router-link-active is-active"
+                        >
+                          <!---->
+                          <span>追番</span>
+                        </a>
+                        <a href="/channel/167" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>国创</span>
+                        </a>
+                        <a href="/channel/3" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>音乐</span>
+                        </a>
+                        <a href="/channel/129" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>舞蹈</span>
+                        </a>
+                        <a href="/channel/4" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>游戏</span>
+                        </a>
+                        <a href="/channel/36" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>知识</span>
+                        </a>
+                        <a href="/channel/188" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>数码</span>
+                        </a>
+                        <a href="/channel/160" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>生活</span>
+                        </a>
+                        <a href="/channel/119" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>鬼畜</span>
+                        </a>
+                        <a href="/channel/155" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>时尚</span>
+                        </a>
+                        <a href="/channel/5" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>娱乐</span>
+                        </a>
+                        <a href="/channel/181" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>影视</span>
+                        </a>
+                        <a href="/channel/177" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>纪录片</span>
+                        </a>
+                        <a href="/channel/23" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>电影</span>
+                        </a>
+                        <a href="/channel/11" class="v-switcher__header__tabs__item">
+                          <!---->
+                          <span>电视剧</span>
+                        </a>
+                        <a
+                          href="https://live.bilibili.com/h5/"
+                          class="v-switcher__header__tabs__item"
+                        >
+                          <!---->
+                          <span>直播</span>
+                        </a>
+                        <a
+                          href="https://h.bilibili.com/ywh/h5/home"
+                          class="v-switcher__header__tabs__item"
+                        >
+                          <!---->
+                          <span>相簿</span>
+                        </a>
+                        <div
+                          class="v-switcher__header__anchor"
+                          style="width: 34.2188px; transform: translateX(148.438px); transition-duration: 300ms;"
+                        ></div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="v-drawer v-drawer--top" style="top:48px;">
+              <!---->
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="m-channel-view">
         <div class="sub-channel-menu">
           <div class="sub-channel-box">
             <div class="v-switcher">
               <div class="v-affix">
                 <div style="display: none;"></div>
-                <div class> 
+                <div class>
                   <!-- <div class="v-switcher__header" style="hight:0px'">
                     <div class="v-switcher__header__before"></div>
                     <div class="v-switcher__header__after"></div>
@@ -24,7 +157,7 @@
             番剧
           </li>
           <li class="zflist">
-            <img src="img/icon2.png" alt="">
+            <img src="./img/icon2.png" alt="">
             国创
           </li>
           <li class="zflist">
@@ -32,7 +165,7 @@
             时间表
           </li>
           <li class="zflist">
-            <img src="img/icon4.png" alt="">
+            <img src="./img/icon4.png" alt="">
             索引表
           </li>
           <li class="zflist">
@@ -5916,5 +6049,4 @@ body.night-mode .v-swipe__indicator__item.is-active {
 .v-navbar__wrap__after>* {
     margin-left: 5.33333vw;
 }
-
 </style>
