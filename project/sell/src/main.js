@@ -17,6 +17,7 @@ import Personal from "./components/Helinjun/Personal/Personal"
 import Channel from './components/yinwenbin/Channel/Channel'
 import Partition from './components/yinwenbin/Partition/Partition'
 import main from './components/yinwenbin/main/main'
+import zhuifan from "./components/ChengYubin/zhuifan"
 Vue.use(Resource)
 Vue.use(Router)
 //    关闭生产模式下的提示
@@ -31,8 +32,8 @@ const routes = [
       {path:'/liveContext', component:liveContext},
       {path:'/ces', component:ces},
       {path: '/hot', component:hot},
-      {path:'/kz', component:kz}
-
+      {path:'/kz', component:kz},
+      {path:'/zhuifan', component:zhuifan}
     ]
   },
   {path:'/liveContext', component:liveContext},
