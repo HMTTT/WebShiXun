@@ -10,6 +10,7 @@ import ces from "./components/XuJinRen/ceshi"
 import live from "./components/XuJinRen/live"
 //知识区
 import kz from "./components/tantengkai/kz/kz.vue"
+import hot from "./components/joe/hot"
 import huiyuangou  from "./components/lijiale/merberBuy"
 Vue.config.productionTip = false
 import Personal from "./components/Helinjun/Personal/Personal"
@@ -21,7 +22,17 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
-  {path:"/live", component:live},
+ //知识区
+  { path:"/live",
+    component:live,
+    children:[
+      {path:'/liveContext', component:liveContext},
+      {path:'/ces', component:ces},
+      {path: '/hot', component:hot},
+      {path:'/kz', component:kz},
+      {path:"/zhuifan", component:zhuifan}
+    ]
+  },
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
   {path:'/Personal', component:Personal},

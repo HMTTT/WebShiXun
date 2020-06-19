@@ -191,12 +191,12 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/111.jpg"
+                            srcset="img/111.jpg"
                             onload
                             class="pic"
                           />
                           <img
-                            src="../../static/111.jpg"
+                            src="img/111.jpg"
                             alt="【4月】辉夜大小姐想让我告白？～天才们的恋爱头脑战～  10【独家正版】"
                             onload
                             class="pic"
@@ -218,7 +218,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/222.jpg"
+                            srcset="img/222.jpg"
                             onload
                             class="pic"
                           />
@@ -245,7 +245,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/333.jpg"
+                            srcset="img/333.jpg"
                             onload
                             class="pic"
                           />
@@ -272,7 +272,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/444.jpg"
+                            srcset="img/444.jpg"
                             onload
                             class="pic"
                           />
@@ -319,7 +319,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/555.jpg"
+                            srcset="img/555.jpg"
                             onload
                             class="pic"
                           />
@@ -346,7 +346,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/111.jpg"
+                            srcset="img/111.jpg"
                             onload
                             class="pic"
                           />
@@ -373,7 +373,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/222.jpg"
+                            srcset="img/222.jpg"
                             onload
                             class="pic"
                           />
@@ -400,7 +400,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/333.jpg"
+                            srcset="img/333.jpg"
                             onload
                             class="pic"
                           />
@@ -447,7 +447,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/444.jpg"
+                            srcset="img/444.jpg"
                             onload
                             class="pic"
                           />
@@ -474,7 +474,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/555.jpg"
+                            srcset="img/555.jpg"
                             onload
                             class="pic"
                           />
@@ -501,7 +501,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/111.jpg"
+                            srcset="img/111.jpg"
                             onload
                             class="pic"
                           />
@@ -528,7 +528,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/222.jpg"
+                            srcset="img/222.jpg"
                             onload
                             class="pic"
                           />
@@ -575,7 +575,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/333.jpg"
+                            srcset="img/333.jpg"
                             onload
                             class="pic"
                           />
@@ -602,7 +602,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/444.jpg"
+                            srcset="img/444.jpg"
                             onload
                             class="pic"
                           />
@@ -629,7 +629,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/555.jpg"
+                            srcset="img/555.jpg"
                             onload
                             class="pic"
                           />
@@ -656,7 +656,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/111.jpg"
+                            srcset="img/111.jpg"
                             onload
                             class="pic"
                           />
@@ -703,7 +703,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/222.jpg"
+                            srcset="img/222.jpg"
                             onload
                             class="pic"
                           />
@@ -730,7 +730,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/333.jpg"
+                            srcset="img/333.jpg"
                             onload
                             class="pic"
                           />
@@ -757,7 +757,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/444.jpg"
+                            srcset="img/444.jpg"
                             onload
                             class="pic"
                           />
@@ -784,7 +784,7 @@
                         <picture>
                           <source
                             type="image/webp"
-                            srcset="../../static/555.jpg"
+                            srcset="img/555.jpg"
                             onload
                             class="pic"
                           />
@@ -851,6 +851,5 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 </style>
