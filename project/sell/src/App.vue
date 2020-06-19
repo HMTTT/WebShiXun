@@ -5,13 +5,18 @@
     <!-- <live></live> -->
 	<!-- <merberBuy></merberBuy> -->
     <!--调试的时候注释这个 -->
+
+  <!--  <live></live> -->
+    <!-- 调的时候注释下DongTai -->
+    <!--<DongTai></DongTai>-->
+   <!-- <Personal></Personal> -->
     <!-- <live></live> -->
     <!-- <hot></hot> -->
     <!-- 调的时候注释下DongTai -->
     <!--<DongTai></DongTai>-->
     <!-- <Personal></Personal> -->
 
-    <div class="details"><router-view></router-view></div>
+    <div class="details"><router-view ></router-view></div>
 
     <div class="bottom border-1px">
       <div class="bottom-item">
@@ -30,6 +35,9 @@
          <router-link to="/Personal"><img src="./common/images/bot5.png" /></router-link>
         </div>
     </div>
+
+    </div>
+
     <!-- <DongTai></DongTai> -->
     <!-- <kz></kz> -->
   </div>
@@ -47,6 +55,8 @@ export default {
   components:{
     DongTai,
     live,
+    Personal,
+    kz,
     merberBuy,
     Personal,
     kz
@@ -59,26 +69,20 @@ export default {
   #app
     .details
       width :100%
-      height :610px
+      height :612px
     .bottom
       display: flex
       width: 100%
       height:55px
-      margin-bottom :0px
-      line-height: 55px
+      bottom:0px
       position: fixed
-      /* border-1px(rgba(7,17,27,0.1)) */
+      overflow: hidden
       .bottom-item
+        background-color :white
         flex:1
         img
           width :75px
-          height :50px
-        /* & > a
-          display: block
-          height: 55px
-          color: rgb(77,85,93)
-          &.router-link-active
-            color: rgb(240,20,20) */
+          height :54px
 /*{
   margin: 0 auto;
   padding: 0;
@@ -90,7 +94,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-<<<<<<< HEAD
   height:auto;
 }
 } */

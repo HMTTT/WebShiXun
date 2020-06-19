@@ -22,8 +22,10 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 //定义路由页面
 const routes = [
-  {
-    path:"/live",
+  {path:'/Personal', component:Personal},
+
+  //知识区
+  { path:"/live",
     component:live,
     children:[
       {path:'/liveContext', component:liveContext},
@@ -34,8 +36,6 @@ const routes = [
   },
   {path:'/Personal', component:Personal},
   //知识区
-
-
 
   {path:"/DongTai", component:DongTai},
   {path:"/huiyuangou", component:huiyuangou}

@@ -93,6 +93,7 @@
 				</div>
 			</div>
 		</div>
+    <div class="bottom5"></div>
 	</div>
 </template>
 
@@ -132,7 +133,7 @@
 						this.feed_img.push(require("./img/"+img_c))
 					}
 					// this.feed_img=require('http:'+this.feeds.list[0].imageUrls[0])
-					
+
 					// console.log('http:'+this.feeds.list[0].imageUrls[0])
 					// console.log(this.feeds)
 					console.log(this.merberBuy)
@@ -159,7 +160,7 @@
 			})
 		},
 		components:{
-			
+
 		},
 		methods:{
 			add(a,mod){
@@ -182,7 +183,7 @@
 				// console.log("aaaaaa")
 				// console.log(a)
 			}
-			
+
 		},
 		computed:{
 			content_title_bg:function(){
@@ -204,8 +205,9 @@
 	.merberBuyClasss
 		// overflow :hidden
 		width :90%
-		margin :1% 5%
+		margin :5px 5% 50px 5%
 		color :rgb(36,36,36)
+		text-align:center
 		.header_up
 			margin :20px 0px
 			position:relative
@@ -507,4 +509,5 @@
 								bottom :0
 								color :#999999
 							// float :left
+
 </style>
