@@ -15,6 +15,9 @@ import huiyuangou  from "./components/lijiale/merberBuy"
 Vue.config.productionTip = false
 import Personal from "./components/Helinjun/Personal/Personal"
 import zhuifan from "./components/ChengYubin/zhuifan"
+import Channel from './components/yinwenbin/Channel/Channel'
+import Partition from './components/yinwenbin/Partition/Partition'
+import main from './components/yinwenbin/main/main'
 Vue.use(Resource)
 Vue.use(Router)
 //    关闭生产模式下的提示
@@ -36,6 +39,9 @@ const routes = [
   {path:'/liveContext', component:liveContext},
   {path:'/ces', component:ces},
   {path:'/Personal', component:Personal},
+    {path: '/Channel',component: Channel},
+	{path: '/Partition',component: Partition},
+	{path: '/main',component: main},
   //知识区
   {path:'/kz', component:kz},
   {path:"/DongTai", component:DongTai},
